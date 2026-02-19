@@ -1,0 +1,307 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f9ff;
+color:#1b2a4e;
+scroll-behavior:smooth;
+}
+
+.top-bar{
+background:#7ED321;
+color:#1E1E1E;
+text-align:center;
+padding:8px;
+font-size:14px;
+font-weight:600;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo img{
+height:70px;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#0d3b66;
+font-weight:bold;
+}
+
+.btn-nav{
+background:#7ED321;
+color:#1E1E1E;
+padding:8px 18px;
+border-radius:20px;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+flex-wrap:wrap;
+}
+
+.hero-img img{
+width:350px;
+transition:0.4s;
+}
+
+.hero-img img:hover{
+transform:scale(1.05);
+}
+
+.form-container{
+width:300px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#7ED321;
+color:#1E1E1E;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 0 10px rgba(126,211,33,0.6);
+transition:0.3s;
+}
+
+button:hover{
+background:#4CAF50;
+box-shadow:0 0 20px rgba(126,211,33,1);
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.testimonios{
+padding:60px 20px;
+text-align:center;
+background:white;
+}
+
+.contenedor-testimonios{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+flex-wrap:wrap;
+margin:30px auto;
+max-width:1000px;
+}
+
+.card-test{
+background:white;
+padding:25px;
+width:280px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.estadisticas{
+background:#7ED321;
+color:#1E1E1E;
+display:flex;
+justify-content:center;
+gap:80px;
+padding:60px 20px;
+text-align:center;
+flex-wrap:wrap;
+}
+
+footer{
+background:#0f3057;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:24px;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+.promociones{
+    padding:60px;
+    text-align:center;
+    background:#f4f9ff;
+}
+
+.promo-contenedor{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.promo-card{
+    background:white;
+    padding:25px;
+    width:250px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    position:relative;
+    transition:0.3s;
+}
+
+.promo-card:hover{
+    transform:translateY(-10px);
+}
+
+.precio-antiguo{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.precio{
+    font-size:28px;
+    color:#78c21c;
+    font-weight:bold;
+}
+
+.descuento{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:#78c21c;
+    color:white;
+    padding:5px 10px;
+    border-radius:10px;
+    font-size:12px;
+}
+.planes{
+    padding:60px;
+    text-align:center;
+}
+
+.plan-contenedor{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.plan-card{
+    background:white;
+    padding:30px;
+    width:250px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.plan-card:hover{
+    transform:scale(1.05);
+}
+
+.popular{
+    border:3px solid #78c21c;
+}
+.porque{
+    background:#78c21c;
+    color:white;
+    padding:60px;
+    text-align:center;
+}
+
+.porque-contenedor{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.porque i{
+    font-size:40px;
+    margin-bottom:10px;
+}
+.mapa, .cita, .faq{
+    padding:60px;
+    text-align:center;
+}
+
+.btn-cita{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#78c21c;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+details{
+    background:white;
+    padding:15px;
+    margin:10px auto;
+    width:60%;
+    border-radius:10px;
+    cursor:pointer;
+}     
+
+
+ 
