@@ -1,3 +1,214 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#f4f6f9;
+scroll-behavior:smooth;
+}
+
+/* TOP BAR */
+.top-bar{
+background:#111;
+color:white;
+text-align:center;
+padding:8px;
+font-size:14px;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo img{
+height:50px;
+}
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#78c21c;
+}
+
+.btn-nav{
+background:#78c21c;
+color:white;
+padding:8px 18px;
+border-radius:20px;
+}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+padding:80px 50px;
+flex-wrap:wrap;
+background:white;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#555;
+}
+
+.hero-img img{
+max-width:450px;
+width:100%;
+}
+
+/* SECCIONES */
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards, .porque-contenedor, .promo-contenedor, .plan-contenedor, .stats, .test-contenedor{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card, .plan-card, .promo-card, .card-test{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+width:260px;
+transition:0.3s;
+}
+
+.card:hover, .plan-card:hover, .promo-card:hover, .card-test:hover{
+transform:translateY(-10px);
+}
+
+.plan-card.popular{
+border:3px solid #78c21c;
+}
+
+.promo-card .descuento{
+background:#78c21c;
+color:white;
+padding:5px 12px;
+border-radius:15px;
+font-size:12px;
+}
+
+.precio{
+font-size:22px;
+margin:10px 0;
+}
+
+button{
+background:#78c21c;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#5da816;
+}
+
+/* ESTADISTICAS */
+.estadisticas{
+background:#0f3057;
+color:white;
+}
+
+.stats h2{
+font-size:40px;
+color:#78c21c;
+}
+
+/* FORM */
+.form-container{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:30px auto;
+}
+
+input, textarea{
+padding:10px;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+/* MAPA */
+.mapa-contenedor{
+max-width:900px;
+margin:auto;
+}
+
+.direccion{
+margin-top:20px;
+font-weight:500;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:white;
+padding:40px 20px;
+}
+
+.footer-contenido{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.redes a{
+display:inline-block;
+margin:5px;
+color:white;
+text-decoration:none;
+background:#78c21c;
+padding:8px 15px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.redes a:hover{
+background:#5da816;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:20px;
+font-size:14px;
 }
 
 /* SCROLL TOP */
@@ -36,5 +247,48 @@ flex-direction:column;
 text-align:center;
 }
 }
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones a {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+}
 
  
+
