@@ -24,20 +24,26 @@ header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 50px;
+padding:15px 5%;
 background:white;
 box-shadow:0 3px 10px rgba(0,0,0,0.1);
 position:sticky;
 top:0;
 z-index:1000;
+flex-wrap:wrap;
 }
 
 .logo img{
 height:50px;
 }
 
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
 nav a{
-margin:0 12px;
 text-decoration:none;
 color:#333;
 font-weight:500;
@@ -59,9 +65,9 @@ border-radius:20px;
 .hero{
 display:flex;
 align-items:center;
-justify-content:center;
+justify-content:space-between;
 gap:40px;
-padding:80px 50px;
+padding:80px 5%;
 flex-wrap:wrap;
 background:white;
 }
@@ -83,11 +89,16 @@ width:100%;
 
 /* SECCIONES */
 section{
-padding:80px 20px;
+padding:80px 5%;
 text-align:center;
 }
 
-.cards, .porque-contenedor, .promo-contenedor, .plan-contenedor, .stats, .test-contenedor{
+.cards, 
+.porque-contenedor, 
+.promo-contenedor, 
+.plan-contenedor, 
+.stats, 
+.test-contenedor{
 display:flex;
 justify-content:center;
 gap:30px;
@@ -95,16 +106,23 @@ flex-wrap:wrap;
 margin-top:40px;
 }
 
-.card, .plan-card, .promo-card, .card-test{
+.card, 
+.plan-card, 
+.promo-card, 
+.card-test{
 background:white;
 padding:25px;
 border-radius:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-width:260px;
+flex:1 1 260px;
+max-width:300px;
 transition:0.3s;
 }
 
-.card:hover, .plan-card:hover, .promo-card:hover, .card-test:hover{
+.card:hover, 
+.plan-card:hover, 
+.promo-card:hover, 
+.card-test:hover{
 transform:translateY(-10px);
 }
 
@@ -163,12 +181,18 @@ input, textarea{
 padding:10px;
 border-radius:10px;
 border:1px solid #ccc;
+width:100%;
 }
 
 /* MAPA */
 .mapa-contenedor{
 max-width:900px;
 margin:auto;
+}
+
+iframe{
+width:100%;
+border-radius:20px;
 }
 
 .direccion{
@@ -180,7 +204,7 @@ font-weight:500;
 footer{
 background:#111;
 color:white;
-padding:40px 20px;
+padding:40px 5%;
 }
 
 .footer-contenido{
@@ -224,7 +248,7 @@ cursor:pointer;
 display:none;
 }
 
-/* REVEAL ANIMATION */
+/* REVEAL */
 .reveal{
 opacity:0;
 transform:translateY(40px);
@@ -238,57 +262,32 @@ transform:translateY(0);
 
 /* RESPONSIVE */
 @media(max-width:768px){
+
 header{
 flex-direction:column;
-gap:10px;
+gap:15px;
+text-align:center;
 }
+
+nav{
+justify-content:center;
+}
+
 .hero{
 flex-direction:column;
 text-align:center;
 }
+
+.hero h1{
+font-size:28px;
 }
-/* ========================= */
-/* RESPONSIVE DESIGN */
-/* ========================= */
 
-@media (max-width: 768px) {
-
-    body {
-        padding: 10px;
-    }
-
-    .contenedor {
-        width: 100%;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .botones {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .botones a {
-        width: 100%;
-        text-align: center;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
+section{
+padding:60px 5%;
 }
+
 }
 
  
+
 
