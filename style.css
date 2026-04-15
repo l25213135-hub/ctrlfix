@@ -676,3 +676,103 @@ transition:0.3s;
 transform:translateY(-5px);
 box-shadow:0 10px 20px rgba(0,0,0,0.4);
 }
+/* ========================= */
+/* SECCION OPERACION Y DESARROLLO */
+/* ========================= */
+
+.empresa{
+padding:80px 20px;
+background:linear-gradient(135deg,#f4f6f9,#e9f1f7);
+text-align:center;
+}
+
+.empresa h2{
+font-size:34px;
+margin-bottom:50px;
+color:#222;
+letter-spacing:1px;
+}
+
+/* CONTENEDOR */
+.empresa-contenedor{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+/* TARJETAS */
+.empresa-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:all 0.3s ease;
+text-align:left;
+position:relative;
+overflow:hidden;
+}
+
+/* EFECTO HOVER */
+.empresa-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* BARRA DE COLOR ARRIBA */
+.empresa-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:5px;
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+}
+
+/* TITULOS */
+.empresa-card h3{
+color:#0072ff;
+margin-bottom:10px;
+font-size:18px;
+}
+
+/* TEXTO */
+.empresa-card p{
+font-size:14px;
+color:#555;
+line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.empresa h2{
+font-size:26px;
+}
+
+.empresa-card{
+text-align:center;
+}
+
+}
+/* DIAGRAMA */
+
+.diagrama-box{
+margin-top:15px;
+display:flex;
+justify-content:center;
+}
+
+.diagrama-box img{
+width:100%;
+max-width:300px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.diagrama-box img:hover{
+transform:scale(1.05);
+}
